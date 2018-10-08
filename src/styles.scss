@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.nav-head {
+  height: 50px;
+  background-color: #eeeeee;
+}
+
+.input-group-text {
+  background-color: #eeeeee;
+}
+.list-group-item.row {
+  margin-left: 0;
+  margin-right: 0;
+  .list-group-item {
+    padding: 0;
+  }
+}
