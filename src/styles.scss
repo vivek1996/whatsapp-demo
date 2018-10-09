@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: #d9dbd5;
-  position: relative;
+  overflow: hidden;
 }
 .green-bg {
   background-color: #009788;
@@ -14,15 +14,24 @@ body {
   z-index: 1;
 }
 .nav-head {
-  height: 50px;
+  height: 59px;
   background-color: #eeeeee;
 }
 
 .input-group-text {
   background-color: #eeeeee;
 }
+.chat-list-group {
+  // display: flex;
+  // flex-direction: column;
+  // flex-grow: 1;
+  overflow-y: scroll;
+  // z-index: 1;
+  height: 500px;
+}
 .list-group-item {
   padding: 0.5rem 0.2rem;
+  height: 79px;
   &.row {
     margin-left: 0;
     margin-right: 0;
@@ -32,15 +41,21 @@ body {
   }
 }
 .chat-display {
+  // border-top: 1px solid #f2f2f2;
+  flex-grow: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   line-height: 0.8rem;
-  .chat-display-user {
-    padding: 0;
-    margin: 0;
-    .chat-display-msg {
-      padding: 0;
-      margin: 0;
-    }
-  }
+  // .chat-display-user {
+  //   padding: 0;
+  //   margin: 0;
+  //   .chat-display-msg {
+  //     padding: 0;
+  //     margin: 0;
+  //   }
+  // }
 }
 .badge-success {
   background-color: #25d366;
@@ -63,7 +78,7 @@ body {
   flex-direction: row;
   align-items: flex-end;
   overflow: hidden;
-  height: auto;
+  height: 50px;
   width: 100%;
   z-index: 2;
   .send {
@@ -80,7 +95,7 @@ body {
 }
 // conversation css
 .conversation {
-  height: calc(100% - 12px);
+  height: calc(100% - 26px);
   position: relative;
   background: #efe7dd
     url('https://cloud.githubusercontent.com/assets/398893/15136779/4e765036-1639-11e6-9201-67e728e86f39.jpg')
@@ -167,4 +182,77 @@ body {
 }
 .tick-bg {
   color: #4fc3f7;
+}
+.user-avatar-pd {
+  padding: 0 15px 0 13px;
+}
+.chat-display-user-container {
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  pointer-events: all;
+  position: relative;
+}
+.chat-display-user-avatar {
+  flex: none;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  height: 49px;
+  width: 49px;
+}
+.chat-display-user-info {
+  flex-grow: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.chat-display-user {
+  align-items: center;
+  line-height: normal;
+  display: flex;
+}
+.chat-display-user-name {
+  flex-grow: 1;
+  display: inherit;
+  white-space: inherit;
+  text-overflow: inherit;
+  overflow: inherit;
+  text-transform: capitalize;
+}
+.chat-display-user-time {
+  color: rgba(0, 0, 0, 0.4);
+  flex: none;
+  font-size: 12px;
+  max-width: 100%;
+  overflow: hidden;
+  line-height: 14px;
+}
+.chat-display-user-meta {
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  font-size: 13px;
+  line-height: 20px;
+  min-height: 20px;
+}
+.chat-display-user-msg {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+.chat-display-user-unread {
+  color: rgba(0, 0, 0, 0.4);
+  flex: none;
+  font-size: 12px;
+  max-width: 100%;
+  overflow: hidden;
+}
+.svg-inline--fa.fa-w-16 {
+  width: auto;
 }

@@ -1,46 +1,43 @@
-<div class="container-fluid">
-  <div class="d-flex nav-head">
-    <div class="nav-head-img flex-grow-1">
-      <img class="mr-3 rounded-circle p-2 " [src]="userAvatar" alt="Avatar image">
-      <span>Tim</span>
+<div class="d-flex nav-head">
+  <div class="nav-head-img flex-grow-1">
+    <img class="mr-3 rounded-circle p-2 " [src]="userAvatar" alt="Avatar image">
+    <span>Tim</span>
 
-    </div>
-
-    <div class="nav-head-icons">
-      <i class="fas fa-paperclip fa-2x m-2 "></i>
-      <i class="fas fa-ellipsis-v fa-2x m-2"></i>
-
-    </div>
   </div>
-  <div class="chat-container">
-    <div class="conversation h-100">
-      <div class="conversation-container h-100">
-        <div class="message sent">
-          Lorem ipsum dolor sit.
-          <span class="metadata">
-            <span class="time">10:04am</span><span class="tick">
-              <i class="fas fa-check-double p-1 tick-bg"></i></span>
-          </span>
-        </div>
-        <div class="message received">
-          Lorem ipsum dolor sit amet.
-          <span class="metadata"><span class="time">10:05am</span></span>
-        </div>
-        <div class="message sent">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quaerat!
-          <span class="metadata">
-            <span class="time">10:06am</span><span class="tick"><i class="fas fa-check-double p-1 tick-bg"></i></span>
-          </span>
-        </div>
-        <div class="message received">
-          <span id="random">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident tempora eaque
-            aliquid. Quas, mollitia.</span>
-          <span class="metadata"><span class="time">10:08am</span></span>
-        </div>
-      </div>
 
+  <div class="nav-head-icons">
+    <i class="fas fa-paperclip fa-2x m-2 "></i>
+    <i class="fas fa-ellipsis-v fa-2x m-2"></i>
+
+  </div>
+</div>
+<div class="chat-container">
+  <div class="conversation ">
+    <div class="conversation-container">
+      <div class="message sent">
+        Lorem ipsum dolor sit.
+        <span class="metadata">
+          <span class="time">10:04am</span><span class="tick">
+            <i class="fas fa-check-double p-1 tick-bg"></i></span>
+        </span>
+      </div>
+      <div class="message received">
+        Lorem ipsum dolor sit amet.
+        <span class="metadata"><span class="time">10:05am</span></span>
+      </div>
+      <div class="message sent">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quaerat!
+        <span class="metadata">
+          <span class="time">10:06am</span><span class="tick"><i class="fas fa-check-double p-1 tick-bg"></i></span>
+        </span>
+      </div>
+      <div class="message received">
+        <span id="random">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod provident tempora eaque
+          aliquid. Quas, mollitia.</span>
+        <span class="metadata"><span class="time">10:08am</span></span>
+      </div>
     </div>
-    <div class="msg-input-container w-100">
+    <div class="msg-input-container">
       <form class="conversation-compose p-2">
         <div class="emoji">
           <i class="far fa-smile  fa-2x m-1"></i>
@@ -53,3 +50,5 @@
       </form>
     </div>
   </div>
+
+</div>

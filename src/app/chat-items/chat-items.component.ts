@@ -37,6 +37,30 @@ export class ChatItemsComponent implements OnInit {
       message: 'logygvcjhbzsfv',
       time: '01:40am',
       unreadCount: 4
+    },
+    {
+      username: 'yui',
+      message: 'lbjfd cjsjcb',
+      time: '7:03pm',
+      unreadCount: 7
+    },
+    {
+      username: 'yui',
+      message: 'lbjfd cjsjcb',
+      time: '7:03pm',
+      unreadCount: 7
+    },
+    {
+      username: 'yui',
+      message: 'lbjfd cjsjcb',
+      time: '7:03pm',
+      unreadCount: 7
+    },
+    {
+      username: 'yui',
+      message: 'lbjfd cjsjcb',
+      time: '7:03pm',
+      unreadCount: 7
     }
   ];
   constructor() {}
