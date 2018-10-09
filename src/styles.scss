@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-color: #d9dbd5;
-  overflow: hidden;
 }
 .green-bg {
   background-color: #009788;
@@ -15,7 +14,7 @@ body {
 }
 .nav-head {
   height: 59px;
-  background-color: #eeeeee;
+  background-color: #075e54;
 }
 
 .input-group-text {
@@ -62,14 +61,17 @@ body {
 }
 // chat items css
 .chat-container {
-  height: calc(100% - 1rem);
+  // height: calc(100% - 1rem);
   background-color: #ece5dd;
 }
 
 // chat input box
 .msg-input-container {
   background-color: #f7f4f4;
-  height: 45px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  // height: 45px;
 }
 
 .conversation-compose {
@@ -78,7 +80,7 @@ body {
   flex-direction: row;
   align-items: flex-end;
   overflow: hidden;
-  height: 50px;
+  // height: 50px;
   width: 100%;
   z-index: 2;
   .send {
@@ -95,18 +97,21 @@ body {
 }
 // conversation css
 .conversation {
-  height: calc(100% - 26px);
+  // height: calc(100% - 31px);
+  height: 547px;
   position: relative;
   background: #efe7dd
     url('https://cloud.githubusercontent.com/assets/398893/15136779/4e765036-1639-11e6-9201-67e728e86f39.jpg')
     repeat;
   z-index: 0;
   .conversation-container {
-    height: calc(100% - 68px);
+    // height: calc(100% - 68px);
     box-shadow: inset 0 10px 10px -10px #000000;
     overflow-x: hidden;
+    overflow-y: scroll;
     padding: 0 16px;
     margin-bottom: 5px;
+    height: 500px;
   }
 }
 
@@ -255,4 +260,10 @@ body {
 }
 .svg-inline--fa.fa-w-16 {
   width: auto;
+}
+.media-hover {
+  cursor: pointer;
+  &:hover {
+    background-color: #5d8a04;
+  }
 }
