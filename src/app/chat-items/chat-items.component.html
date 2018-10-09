@@ -20,12 +20,18 @@
   </div>
   <div class="chat-list">
     <ul class="list-group">
-      <li class="list-group-item row d-flex justify-content-between align-items-center ">
+      <li class="list-group-item row d-flex justify-content-between align-items-center " *ngFor="let chat of details">
         <div class="col-3"><i class="fas fa-user-circle fa-2x"></i></div>
-        <div class="col-6">
-          <p class=" text-left">Cras justo odio</p>
+        <div class="col-6 chat-display">
+          <p class=" text-left chat-display-user"> {{chat.username}} </p> <br>
+          <small class="chat-display-msg"><i class="fas fa-check"></i><span class="p-1">{{
+              chat.message}}
+            </span></small>
         </div>
-        <div class="col-3"> <span class="badge badge-primary badge-pill">14</span></div>
+        <div class="col-3 chat-meta text-right">
+          <small class=" time-slot font-weight-normal"> {{chat.time}} </small> <br>
+          <span *ngIf="chat.unreadCount" class="badge badge-success rounded-circle"> {{chat?.unreadCount}} </span>
+        </div>
 
       </li>
     </ul>

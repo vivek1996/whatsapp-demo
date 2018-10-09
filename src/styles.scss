@@ -7,10 +7,24 @@
 .input-group-text {
   background-color: #eeeeee;
 }
-.list-group-item.row {
-  margin-left: 0;
-  margin-right: 0;
-  .list-group-item {
+.list-group-item {
+  padding: 0.5rem 0.2rem;
+  &.row {
+    margin-left: 0;
+    margin-right: 0;
+    .list-group-item {
+      padding: 0;
+    }
+  }
+}
+.chat-display {
+  line-height: 0.8rem;
+  .chat-display-user {
     padding: 0;
+    margin: 0;
+    .chat-display-msg {
+      padding: 0;
+      margin: 0;
+    }
   }
 }
