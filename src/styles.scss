@@ -1,4 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #d9dbd5;
+  position: relative;
+}
+.green-bg {
+  background-color: #009788;
+  height: 10vh;
+  //top: 0;
+  //position: absolute;
+  z-index: -1;
+}
+.app {
+  z-index: 1;
+}
 .nav-head {
   height: 50px;
   background-color: #eeeeee;
